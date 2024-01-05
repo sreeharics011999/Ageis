@@ -1,0 +1,116 @@
+.profile-img-div{
+    width: 50%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+.profile-img{
+    width: 150px;
+    border-radius: 50%;
+}
+.section-1{
+    display: flex;
+    justify-content: space-between;
+}
+.prfl-detail{
+    display: flex;
+    width:40%;
+    margin-top: 5%;
+}
+.prfl-name-detail{
+    padding-top: 10%;
+}
+.prfl-detail-h3{
+    font-size: 155%;
+}
+.prfl-detail-h4{
+    font-size: 85%
+}
+.prfl-detail-h5{
+    font-size: 70%
+}
+.experience-key{
+    width: 120%;
+}
+.edit-btn-div{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.education-key{
+    display: none;
+}
+.prfl-contact-h3{
+    font-weight: 500;
+    font-size: x-large;
+    text-decoration: underline;
+}
+.edit-prfl-btn{
+    font-size: x-small;
+}
+.prfl-contact-info{
+    border-radius: 5px;
+    border-top: 1px solid rgba(128, 128, 128, 0.397);
+    padding: 2%;
+    margin-top: 0% !important;
+    margin-bottom: 5%;
+}
+.prfl-contact-mob-email{
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-email{
+    margin-right: 1%;
+}
+.education-header{
+    font-size: large;
+    text-align: left;
+    font-weight: 600;
+    margin-left: 2%;
+}
+.univercity-h5,.branch-h5,.cgpa-h5{
+    font-size: small;
+    font-weight: 300;
+    text-align: center;
+}
+.cgpa-p{
+    font-size: small;
+    font-weight: 300;
+}
+.row-edu{
+    margin-top: 3%;
+}
+.prfl-contact-mob{
+    width: 100%;
+}
+.prfl-contact-email{
+    width: 50%;
+}
+.prfl-edit-btn{
+    display: flex;
+    justify-content: space-between;
+}
+.skill-ul{
+    list-style-type: none;
+    display: flex;
+}
+.link{
+    box-shadow: 0px 10px 10px 2px #FAF2AA;
+    margin: 2%;
+    padding: 1%;
+    font-size: smaller;
+}
+.bi-trash3{
+    color: red;
+}
+.link-row {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .link-row li {
+    margin-right: 10px; /* Adjust as needed to control the space between links */
+  }
+  
