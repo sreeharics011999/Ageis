@@ -266,24 +266,53 @@
         <div class="section-1">
             <div class="prfl-detail">
                 <div class="profile-img-div">
-                    <img src="./images/demo.jpeg" class="profile-img">
+                    <img src="./images/demo.jpeg" class="profile-img" id="prfl-pic">
                 </div>
                 <div class="prfl-name-detail">
-                    <h3 class="prfl-detail-h3"><span class="first-name-class me-3">Suraj</span><span
-                            class="last-name-class">sc</span></h3>
+                    <h3 class="prfl-detail-h3"><span class="first-name-class me-3" id="prfl-firstname">Suraj</span><span
+                            class="last-name-class"  id="prfl-lastname">sc</span></h3>
                     <div class="experience-key">
-                        <h4 class="prfl-detail-h4">React Developer</h4>
-                        <h5 class="prfl-detail-h5"><a href="#" class="text-dark">A2ZAlphabetsolutionz</a></h5>
-                    </div>
-                    <div class="education-key">
-                        <h4 class="prfl-detail-h4">Mechanical Engineering</h4>
-                        <h5 class="prfl-detail-h5">Government college of Engineering</h5>
+                        <h4 class="prfl-detail-h4" id="prfl-position">React Developer</h4>
+                        <h5 class="prfl-detail-h5"><a href="#" class="text-dark" id="prfl-company">A2ZAlphabetsolutionz</a></h5>
                     </div>
                 </div>
             </div>
             <div class="edit-btn-div">
-                <a class="btn btn-danger edit-prfl-btn"><i class="bi bi-pencil-square me-2"></i>Edit</a>
+                <a class="btn btn-danger edit-prfl-btn" id="edit-prfl-btn"><i class="bi bi-pencil-square me-2"></i>Edit</a>
             </div>
+
+            <!--Edit sectioni--------->
+            <div class="form-div" id="name-update">
+                <div class="close-btn" id="close-btn">
+                    <a href="" class="btn btn-danger"><i class="bi bi-x"></i></a>
+                </div>
+                <div class="input-elements">
+                    <div class="input-div">
+                        <span class="error-text" id="error-notification-pic">Please upload your profile pic</span>
+                        <input type="text" class="form-control form-control-update" id="pic" placeholder="Upload your profile pic">
+                    </div>
+                    <div class="input-div">
+                        <span class="error-text" id="error-notification-frst-name">Please enter your first name</span>
+                        <input type="text" class="form-control form-control-update" id="firstname" placeholder="Enter your first name">
+                    </div>
+                    <div class="input-div">
+                        <span class="error-text" id="error-notification-last-name">Please enter your last name</span>
+                        <input type="text" class="form-control form-control-update" id="lastname" placeholder="Enter your last name">
+                    </div>
+                    <div class="input-div">
+                        <span class="error-text" id="error-notification-position">Please enter your position</span>
+                        <input type="text" class="form-control form-control-update" id="current-position" placeholder="Current position">
+                    </div>
+                    <div class="input-div">
+                        <span class="error-text" id="error-notification-company">Please enter your comapany/univercity</span>
+                        <input type="text" class="form-control form-control-update" id="current-company" placeholder="Current company/university">
+                    </div>
+                    <div class="update-btn-div">
+                        <a class="update-btn btn btn-danger"  id="update-btn-name">Update</a>
+                    </div>
+                </div>
+            </div>
+            <!--------------------->
         </div>
         <!--------------->
 
@@ -292,121 +321,148 @@
             <div class="prfl-edit-btn">
                 <h3 class="prfl-contact-h3">Contact info</h3>
                 <div class="edit-btn-div">
-                    <a class="btn btn-danger edit-prfl-btn"><i class="bi bi-pencil-square me-2"></i>Edit</a>
+                    <a class="btn btn-danger edit-prfl-btn" id="edit-contact-btn"><i class="bi bi-pencil-square me-2"></i>Edit</a>
                 </div>
             </div>
             <div class="prfl-contact-mob-email">
                 <div class="prfl-contact-mob">
-                    <h6><span class="contact-email"><i class="bi bi-telephone-outbound me-2 text-danger"></i></span><span class="contact-mob-num">9876543210</span></h6>
+                    <h6><span class="contact-email"><i class="bi bi-telephone-outbound me-2 text-danger"></i></span><span class="contact-mob-num" id="prfl-number">9876543210</span></h6>
                 </div>
                 <div class="prfl-contact-mob">
-                    <h6><span class="contact-email"><i class="bi bi-geo-alt me-2 text-danger"></i></span><span class="contact-mob-num">Thiruvanathapuram</span></h6>
+                    <h6><span class="contact-email"><i class="bi bi-geo-alt me-2 text-danger"></i></span><span class="contact-mob-num" id="prfl-location">Thiruvanathapuram</span></h6>
                 </div>
                 <div class="prfl-contact-email">
-                    <h6><span class="contact-email "><i class="bi bi-envelope me-2 text-danger"></i></span><span class="contact-mob-email">suraj1999@gmail.com</span></h6>
+                    <h6><span class="contact-email "><i class="bi bi-envelope me-2 text-danger"></i></span><span class="contact-mob-email" id="prfl-email">suraj1999@gmail.com</span></h6>
                 </div>
             </div>
         </div>
+
+        <!--Edit section--------->
+        <div class="form-div" id="contact-update">
+            <div class="close-btn" id="contact-close-btn">
+                <a href="" class="btn btn-danger"><i class="bi bi-x"></i></a>
+            </div>
+            <div class="input-elements">
+                <div class="input-div">
+                    <span class="error-text" id="error-notification-number">please enter your phnone number</span>
+                    <input type="number" class="form-control form-control-update" id="number" placeholder="Enter your number" required>
+                </div>
+                <div class="input-div">
+                    <span class="error-text" id="error-notification-location">Please enter your location</span>
+                    <input type="text" class="form-control form-control-update" id="location" placeholder="Enter your location" required>
+                </div>
+                <div class="input-div">
+                    <span class="error-text" id="error-notification-email">Please enter your Email</span>
+                    <input type="email" class="form-control form-control-update" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="update-btn-div">
+                    <a class="update-btn btn btn-danger"  id="update-btn-contact">Update</a>
+                </div>
+            </div>
+        </div>
+        <!--------------------->
+
+
         <!------------------>
 
         <!----Education-info----->
         <div class="prfl-contact-info mt-5">
             <div class="prfl-edit-btn">
                 <h3 class="prfl-contact-h3">Education</h3>
-                <div class="edit-btn-div">
-                    <a class="btn btn-danger edit-prfl-btn"><i class="bi bi-pencil-square me-2"></i>Edit</a>
+                <div class="edit-btn-div" id="prfl-add-btn">
+                    <a class="btn btn-danger edit-prfl-btn"><i class="bi bi-pencil-square me-2"></i>Add</a>
                 </div>
             </div>
-            <div class="prfl-education container">
-                <div class="row row-edu">
-                    <h2 class="education-header">Post Graduation</h2>
-                    <div class="col-4">
+            <div class="prfl-education container" id="append">
+                <div class="row row-edu eachrow">
+                    <h2 class="education-header" id="prfl-header">Post Graduation</h2>
+                    <div class="col-3">
                         <div class="post-graduation">
-                            <h5 class="univercity-h5">Apj Abdhul kalam technical university</h5>
+                            <h5 class="univercity-h5" id="prfl-univercity">Apj Abdhul kalam technical university</h5>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-3">
                         <div class="post-graduation">
-                            <h5 class="branch-h5">Material Testing</h5>
+                            <h5 class="branch-h5" id="prfl-branch">Material Testing</h5>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-3">
                         <div class="post-graduation">
-                            <h5 class="cgpa-h5">6.7</h5>
+                            <h5 class="cgpa-h5" id="prfl-percentage">6.7</h5>
                         </div>
                     </div>
-                </div>
-                <div class="row row-edu">
-                    <h2 class="education-header">Graduation</h2>
-                    <div class="col-4">
-                        <div class="post-graduation">
-                            <h5 class="univercity-h5">Apj Abdhul kalam technical university</h5>
+                    <div class="col-3">
+                        <div class="post-graduation education-edit-btn">
+                            <h5 class="cgpa-h5"><i class="bi bi-pencil-square me-2"></i></h5>
                         </div>
-                    </div>
-                    <div class="col-4">
                         <div class="post-graduation">
-                            <h5 class="branch-h5">B.Tech Mechanical Engineering</h5>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="post-graduation">
-                            <h5 class="cgpa-h5">7.7</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="row row-edu">
-                    <h2 class="education-header">Higher Secondary</h2>
-                    <div class="col-4">
-                        <div class="post-graduation">
-                            <h5 class="univercity-h5">Govt Boys Hss Thiruvanathapuram</h5>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="post-graduation">
-                            <h5 class="branch-h5">Biology Science</h5>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="post-graduation">
-                            <h5 class="cgpa-h5">81%</h5>
+                            <h5 class="cgpa-h5 education-delete-btn" id =""><i class="bi bi-trash me-2"></i></h5>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
         <!------------------>
+
+         <!--Edit section--------->
+         <div class="form-div" id="education-update">
+            <div class="close-btn" id="education-close-btn">
+                <a href="" class="btn btn-danger"><i class="bi bi-x"></i></a>
+            </div>
+            <div class="input-elements">
+                <div class="input-div">
+                    <span class="error-text" id="error-notification-qualification">please enter your Qualifiaction</span>
+                    <input type="text" class="form-control form-control-update" id="qulification" placeholder="Enter your Qualification" required>
+                </div>
+                <div class="input-div">
+                    <span class="error-text" id="error-notification-university">Please enter your University</span>
+                    <input type="text" class="form-control form-control-update" id="university" placeholder="Enter your University" required>
+                </div>
+                <div class="input-div">
+                    <span class="error-text" id="error-notification-stream">Please enter your Stream</span>
+                    <input type="text" class="form-control form-control-update" id="stream" placeholder="Enter your Stream" required>
+                </div>
+                <div class="input-div">
+                    <span class="error-text" id="error-notification-percentage">Please enter your percentage/CGPA</span>
+                    <input type="text" class="form-control form-control-update" id="percentage" placeholder="Enter your Percentage/CGPA" required>
+                </div>
+                <div class="update-btn-div">
+                    <a class="update-btn btn btn-danger"  id="update-btn-education">Update</a>
+                </div>
+            </div>
+        </div>
+        <!--------------------->
 
          <!----Skill-info----->
          <div class="prfl-contact-info mt-5">
             <div class="prfl-edit-btn">
                 <h3 class="prfl-contact-h3">Skills</h3>
-                <div class="edit-btn-div">
-                    <a class="btn btn-danger edit-prfl-btn"><i class="bi bi-pencil-square me-2"></i>Edit</a>
+                <div class="edit-btn-div" id="skill-edit-btn">
+                    <a class="btn btn-danger edit-prfl-btn"><i class="bi bi-pencil-square me-2"></i>Add</a>
                 </div>
             </div>
             <div class="prfl-education container">
                 <ul  id="linkList">
-                    <li class="link">React<a href=""><i class="bi bi-trash3 ms-3"></i></a></li>
-                    <li class="link">React<a href=""><i class="bi bi-trash3 ms-3"></i></a></li>
-                    <li class="link">React<a href=""><i class="bi bi-trash3 ms-3"></i></a></li>
-                    <li class="link">React<a href=""><i class="bi bi-trash3 ms-3"></i></a></li>
-                    <li class="link">React<a href=""><i class="bi bi-trash3 ms-3"></i></a></li>
-                    <li class="link">React<a href=""><i class="bi bi-trash3 ms-3"></i></a></li>
-                    <li class="link">React<a href=""><i class="bi bi-trash3 ms-3"></i></a></li>
-                    <li class="link">React<a href=""><i class="bi bi-trash3 ms-3"></i></a></li>
-                    <li class="link">React<a href=""><i class="bi bi-trash3 ms-3"></i></a></li>
-                    <li class="link">React<a href=""><i class="bi bi-trash3 ms-3"></i></a></li>
-                    <li class="link">React<a href=""><i class="bi bi-trash3 ms-3"></i></a></li>
-                    <li class="link">React<a href=""><i class="bi bi-trash3 ms-3"></i></a></li>
-                    <li class="link">React<a href=""><i class="bi bi-trash3 ms-3"></i></a></li>
-                    <li class="link">React<a href=""><i class="bi bi-trash3 ms-3"></i></a></li>
-                    <li class="link">React<a href=""><i class="bi bi-trash3 ms-3"></i></a></li>
-                    <li class="link">React<a href=""><i class="bi bi-trash3 ms-3"></i></a></li>
-                    <li class="link">React<a href=""><i class="bi bi-trash3 ms-3"></i></a></li>
-                    <li class="link">React<a href=""><i class="bi bi-trash3 ms-3"></i></a></li>
+                    <!-- <li class="link" id="skill-list"><a href="" class="delete"><i class="bi bi-trash3 ms-3"></i></a></li> -->
                 </ul>
             </div>
+            <!--Edit section--------->
+         <div class="form-div" id="skill-update">
+            <div class="close-btn" id="skill-close-btn">
+                <a href="" class="btn btn-danger"><i class="bi bi-x"></i></a>
+            </div>
+            <div class="input-elements">
+                <div class="input-div">
+                    <span class="error-text" id="error-notification-skill">please add your Skills</span>
+                    <input type="text" class="form-control form-control-update skill-input" id="skill" placeholder="Enter your Skills" required>
+                </div>
+                <div class="update-btn-div">
+                    <a class="update-btn btn btn-danger"  id="update-btn-skill">Update</a>
+                </div>
+            </div>
         </div>
+        <!--------------------->
         <!------------------>
 
          <!----Experience-info----->
@@ -657,6 +713,7 @@
     </div>
 
     <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+  
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
 
@@ -677,6 +734,7 @@
     <script src="assets/js/meanmenu.js"></script>
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/home.js"></script>
+    <script src="./profile.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>

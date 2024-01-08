@@ -113,4 +113,65 @@
   .link-row li {
     margin-right: 10px; /* Adjust as needed to control the space between links */
   }
+  .close-btn{
+    text-align: end;
+    margin: 3%;
+  }
+  .input-elements{
+    text-align: center;
+    width: 100%;
+  }
+  .form-control-update,.update-btn-div{
+    text-align: center;
+  }
+  .form-div{
+    background-color: bisque;
+    padding: 3%;
+    width: 40%;
+    border-radius: 10px;
+    position: fixed;
+    top:13%;
+    left: 30%;
+    text-align: center;
+    z-index: 999;
+  }
+  #name-update{
+    display: none;
+  }
+  .error-text{
+    font-size:70% ;
+    margin-left: -70%;
+  }
+  .input-div,.update-btn-div{
+    margin-top: 3%;
+  }
+  #error-notification-frst-name,#error-notification-last-name,#error-notification-position,#error-notification-company,#error-notification-pic, #error-notification-number, #error-notification-location, #error-notification-email{
+    display: none;
+  }
+  .error-text{
+    color:red;
+  }
+  #linkList{
+    list-style: none;
+  }
+  #contact-update,#education-update,#skill-update,#error-notification-skill{
+    display: none;
+  }
+  @media screen and (max-width: 1400px) and (min-width: 1200px) {
   
+  }
+  @media screen and (max-width: 1200px) and (min-width: 992px) {
+  
+  }
+  @media screen and (max-width: 992px) and (min-width: 768px) {
+  
+  }
+  @media screen and (max-width: 768px) and (min-width: 576px) {
+  
+  }
+  @media screen and (max-width: 576px) and (min-width: 350px) {
+  
+  }
+  @media screen and (max-width: 350px) and (min-width: 250px) {
+  
+  }
