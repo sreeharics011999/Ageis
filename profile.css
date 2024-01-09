@@ -157,20 +157,122 @@
   #contact-update,#education-update,#skill-update,#error-notification-skill{
     display: none;
   }
+  #error-notification-percentage,#error-notification-stream,#error-notification-university,#error-notification-qualification{
+    display: none;
+  }
+  .post-edit-btn{
+  text-align: center;
+  }
+  #experience-update,#error-notification-com-name,#error-notification-position,#error-notification-resume,#resume-update,#error-notification-start-date,#error-notification-end-date,#error-notification-com-detail{
+    display: none;
+  }
+  .resume-img-div{
+    aspect-ratio: 5/7;
+    object-fit: cover;
+    text-align: center;
+   margin-top: 5%;
+   width: 20%;
+  }
+  .resume-img{
+    width: 200px;
+  }
+  .logout{
+      display: grid;
+      justify-content: end !important;
+  
+  }
   @media screen and (max-width: 1400px) and (min-width: 1200px) {
   
   }
   @media screen and (max-width: 1200px) and (min-width: 992px) {
-  
+  .contact-mob-num{
+    font-size: smaller;
+  }
+  .contact-mob-email{
+    font-size: smaller;
+  }
+  .univercity-h5{
+    font-size: x-small;
+  }
   }
   @media screen and (max-width: 992px) and (min-width: 768px) {
-  
+    .contact-mob-num{
+      font-size: small;
+    }
+    .contact-mob-email{
+      font-size: x-small;
+    }
+    .univercity-h5{
+      font-size: x-small;
+    }
+    .prfl-contact-h3{
+font-size: large;
+    }
+    .prfl-detail-h3{
+      font-size: 100%;
+    }
+    .prfl-detail{
+    width: 50%;
+    }
+    .profile-img {
+      width: 130px;
+    }
   }
   @media screen and (max-width: 768px) and (min-width: 576px) {
+    .contact-mob-num{
+      font-size: small;
+    }
+    .contact-mob-email{
+      font-size: x-small;
+    }
+    .univercity-h5{
+      font-size: x-small;
+    }
+    .prfl-contact-h3{
+font-size: large;
+    }
+    .prfl-detail-h3{
+      font-size: 100%;
+    }
+    .prfl-detail{
+    width: 70%;
+    }
+    .profile-img {
+      width: 100px;
+    }
   
   }
   @media screen and (max-width: 576px) and (min-width: 350px) {
   
+    .contact-mob-num{
+      font-size: small;
+    }
+    .contact-mob-email{
+      font-size: x-small;
+    }
+    .univercity-h5{
+      font-size: x-small;
+    }
+    .prfl-contact-h3{
+font-size: medium;
+    }
+    .prfl-detail-h3{
+      font-size: 100%;
+    }
+    .prfl-detail{
+    width: 80%;
+
+    }
+    .prfl-contact-mob-email{
+      display: block;
+      text-align: center;
+    }
+    .prfl-contact-email {
+      width: 100%;
+    }
+    .profile-img {
+      width: 80px;
+    }
   }
   @media screen and (max-width: 350px) and (min-width: 250px) {
   
